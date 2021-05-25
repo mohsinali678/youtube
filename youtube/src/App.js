@@ -15,10 +15,18 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <nav>
-          <Link to='/'>Home</Link>
-          {" "}
-          <Link to='/about'>About</Link>
+        <nav className="Navbar">
+          <Link to="/" className="Navbar-Items">
+            Youtube
+          </Link>
+
+          <Link to='/' className="Navbar-Items">
+            Home
+          </Link>
+          
+          <Link to='/about' className="Navbar-Items">
+            About
+          </Link>
         </nav>
         <div>
           <Route exact path='/' component={Home} /> 
