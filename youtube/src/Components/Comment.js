@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from "react";
+import "./Comment.css"
 
 function Comment() {
   const textBoxStyle = {
@@ -32,7 +33,7 @@ function Comment() {
   return (
     <div>
       <hr/>
-      <div className="App">
+      <div className="Comment">
 
         <form onSubmit={handleSubmit} style={{marginTop:"50px"}}>
           <label htmlFor="Name">Name</label>
