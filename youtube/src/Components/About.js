@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD
 import "./About.css"
 import Ali from "../images/Ali.jpeg";
 import Kelvin from "../images/Kelvin.jpeg";
-=======
->>>>>>> 0d2d68b35b3ac94a56841b307b73991d706e07b3
 
 export default class About extends Component {
     render() {
         return (
-<<<<<<< HEAD
             <div className="About">
                 <div className="projectDescription">
                     <h1>Project Description</h1>
@@ -34,7 +30,7 @@ export default class About extends Component {
 
                     </div>
                     <div>
-                        <img src={Kelvin} alt="KElvin"/>
+                        <img src={Kelvin} alt="Kelvin"/>
                         <h2>Kelvin Zheng</h2>
                         <p>
                             A Full Stack Fellow at Pursuit with a robust background in Software Development/Full Stack Web/ Engineering. 
@@ -45,10 +41,6 @@ export default class About extends Component {
 
                     </div>
                 </div>
-=======
-            <div>
-                
->>>>>>> 0d2d68b35b3ac94a56841b307b73991d706e07b3
             </div>
         )
     }
