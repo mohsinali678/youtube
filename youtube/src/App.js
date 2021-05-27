@@ -4,7 +4,7 @@ import {Switch, Link, Route} from 'react-router-dom'
 import React, { Component } from 'react'
 import Home from './Components/Home'
 import About from './Components/About'
-// import Video from './Components/Video'
+import Comment from './Components/Comment'
 export default class App extends Component {
   constructor(){
     super()
@@ -30,7 +30,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} /> 
             <Route path='/about' component={About} />
-            {/* <Route path='/video/:id' component={Video} /> */}
+            <Route path='/video/:id' render={(props) => <Comment {...props}/>} />
           </Switch>
         </div>
 

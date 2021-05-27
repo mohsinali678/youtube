@@ -1,19 +1,28 @@
-import './App.css';
+
 import {useState} from "react";
 import "./Comment.css"
+import React from 'react'
+import YouTube from 'react-youtube'
 
-function Comment() {
+function Comment(props) {
   const textBoxStyle = {
     height:"30px",
     width:"500px",
     fontSize:"18px",
     borderRadius:"10px"
   }
+  const opts = {
+    height:'390',
+    width: '640',
+    playerVars : {
+      autoplay: 1,
+    },
+  }
 
   let [name, setName] = useState("")
   let [comment, setComment] = useState("")
   let [data, setData] = useState([])
-
+  let [videoID, setVideoID] = useState(props.match.params.id)
 
   const handleTextChange = (event) => {
     const {value} = event.target;
@@ -30,9 +39,13 @@ function Comment() {
     setData(data = [...data, {name, comment}])
   }
 
+
   return (
+
     <div>
-      <hr/>
+      <YouTube videoId={videoID} opts={opts} />
+
+
       <div className="Comment">
 
         <form onSubmit={handleSubmit} style={{marginTop:"50px"}}>
@@ -75,8 +88,8 @@ function Comment() {
           {data.lenght === 0 ? "" : data.map((item, i) => {
             return(
               <div key={i}>
-                <h1>{item.name}</h1>
-                <p>{item.comment}</p>
+                <h1>Name: {item.name}</h1>
+                <p>Comment: {item.comment}</p>
               </div>
             ) 
           })}
