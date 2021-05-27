@@ -1,6 +1,6 @@
 .Comment {
-    text-align: justify;
-    margin-left: 200px;
+    text-align: center;
+
   }
   
   .btn{
@@ -11,4 +11,7 @@
     width: 80px;
     height: 40px;
     font-size: large;
+  }
+  .section{
+    text-align: center;
   }

@@ -42,8 +42,8 @@ function Comment(props) {
 
   return (
 
-    <div>
-      <YouTube videoId={videoID} opts={opts} />
+    <div className='section'>
+      <YouTube className='player' videoId={videoID} opts={opts} />
 
 
       <div className="Comment">
