@@ -30,7 +30,7 @@ export default class About extends Component {
 
                     </div>
                     <div>
-                        <img src={Kelvin} alt="KElvin"/>
+                        <img src={Kelvin} alt="Kelvin"/>
                         <h2>Kelvin Zheng</h2>
                         <p>
                             A Full Stack Fellow at Pursuit with a robust background in Software Development/Full Stack Web/ Engineering. 
